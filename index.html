@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div id="scoreBox">Score : 0</div>
+        <div id="hiscoreBox">High Score : 0</div>
+        <div id="board"></div>
+
+        <div id="controls"> 
+            <button id="restart"><img src="images/restart.png" alt="restart"></button>
+            <button id="up"><img src="images/up.png" alt="Up"></button>
+            <button id="down"><img src="images/down.png" alt="Down"></button>
+            <button id="left"><img src="images/left.png" alt="Left"></button>
+            <button id="right"><img src="images/right.png" alt="right"></button>
+            <button id="exit"><img src="images/exit.png" alt="exit"></button>
+             <button id="instruction"><img src="images/instruction.jpeg" alt=""></button>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("instruction").addEventListener("click",()=>{
+        alert(`You can use arrow keys shown on the screen as well as device arrow keys for changing the direction of snake. You can also use SFED keys for changing direction ( S->left , F->right ,E->up & D->down )`)
+    })
+</script>
+<script src="script.js"></script>
+</html>

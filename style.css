@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("images/bgi.webp");
+    background-position: center; 
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+#board{
+     background-color: black;
+     margin-top: 5px;
+     width: 40%;
+     height: 100%;
+     border: 3px solid rgb(237, 242, 245);
+     display: grid;
+     grid-template-rows: repeat(24,1fr);
+     grid-template-columns: repeat(28,1fr);
+     margin-top: 70px;
+} 
+
+#scoreBox{
+    position: absolute;
+    top: 8px;
+    left: 30vw;
+    font-size: 25px;
+    color: rgb(246, 239, 226);
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 35px;
+    left: 30vw;
+    font-size: 25px;
+    color:rgb(255, 254, 251);
+    font-family: 'New Tegomin', serif;
+    
+}
+ 
+.snake{
+    background-color: rgb(11, 202, 30);
+    border: .25vmin solid white;
+}
+.head{
+ background-color: rgb(220, 8, 75);
+ border: 2px solid rgb(250, 251, 251); 
+ transform: scale(1);
+}
+.food{
+background:red;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 50%;
+animation: pulse 3s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+ #controls {
+    position: relative;
+    width: 300px;
+    height: 300px; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#up {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#left {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+#restart {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#right {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+#down {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#exit {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    transform: translateX(50%);
+}
+#instruction{
+    position: absolute;
+    left: 42%;
+    top:70%;
+    color: white;
+    :hover{
+        border-radius: 0% !important;
+    }
+
+}
+
+#controls button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#controls img {
+    width: 50px;
+    height: 50px;
+}
+
+#controls img:hover {
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 20%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   #board{
+     height: 50%;
+     width: 95%;
+   }
+}
+
+
+
+
