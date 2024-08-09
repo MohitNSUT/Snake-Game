@@ -1,2 +1,2 @@
-##Snake Game
+##Snake Game##
 Created using HTML, CSS, and JavaScript, this classic Snake game features smooth gameplay with intuitive controls. Players navigate the snake to collect food while avoiding collisions with the walls and the snake's own tail. The game includes a score display that updates in real-time, reflecting the player's progress. The project highlights fundamental concepts in game development and interactive design, providing an engaging and nostalgic gaming experience.
